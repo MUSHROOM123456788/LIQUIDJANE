@@ -1,0 +1,32 @@
+page1.html
+page2.html
+page3.html
+page4.html
+page5.html
+page6.html
+page7.html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LiquidJane Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(180deg, #003300, #00cc66, #99ff99);
+      background-size: 400% 400%;
+      animation: melt 5s ease-in-out infinite alternate;
+    }
+    .title {
+      color: pink;
+      text-shadow: 0 0 20px deeppink, 0 0 40px hotpink;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title" onclick="goHome()">🧜‍♀️ LIQUIDJANE 🧜‍♀️</h1>
+  <div class="instruments">🎷 🎹 🎺 🎸 🥁 🎤 🎻</div>
+  <div class="mermaid-cursor">🧜‍♀️</div>
+  <script src="script.js"></script>
+</body>
+</html>
