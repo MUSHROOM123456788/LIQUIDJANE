@@ -1,0 +1,78 @@
+/* ===== Base Styles ===== */
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  background: linear-gradient(180deg, #000f3a, #004c99, #66b3ff);
+  background-size: 400% 400%;
+  animation: melt 6s ease-in-out infinite alternate;
+  cursor: none;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+/* ===== Title ===== */
+.title {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4em;
+  color: orange;
+  text-shadow: 0 0 15px pink, 0 0 30px red;
+  cursor: pointer;
+}
+
+/* ===== Melting background animation ===== */
+@keyframes melt {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* ===== Instruments line ===== */
+.instruments {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+}
+
+/* ===== Fish Buttons ===== */
+.fish-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fish {
+  position: absolute;
+  font-size: 2.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  animation: bob 2s ease-in-out infinite alternate;
+}
+
+@keyframes bob {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-10px); }
+}
+
+/* Orbit each fish slightly around title */
+.fish:nth-child(1) { top: -150px; left: -50px; animation-delay: 0s; }
+.fish:nth-child(2) { top: -100px; left: 150px; animation-delay: .2s; }
+.fish:nth-child(3) { top: 50px; left: 200px; animation-delay: .4s; }
+.fish:nth-child(4) { top: 150px; left: 50px; animation-delay: .6s; }
+.fish:nth-child(5) { top: 150px; left: -150px; animation-delay: .8s; }
+.fish:nth-child(6) { top: 50px; left: -250px; animation-delay: 1s; }
+.fish:nth-child(7) { top: -100px; left: -200px; animation-delay: 1.2s; }
+
+/* ===== Mermaid Cursor ===== */
+.mermaid-cursor {
+  position: fixed;
+  pointer-events: none;
+  font-size: 2em;
+  transition: transform 0.1s linear;
+}
