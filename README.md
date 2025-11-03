@@ -1,5 +1,4 @@
-mkdir LiquidJaneWebsite
-cd LiquidJaneWebsite
+
 
 # Create index.html
 cat <<EOL > index.html
